@@ -704,7 +704,7 @@ body {
 .site-description {
     color: #999;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 24px;
     margin: 10px 0 20px 0;
 }
 
@@ -1361,4 +1361,10 @@ kbd {
 .snow-series a:hover {
     color: #222;
     text-decoration: underline;
+}
+
+.avatar {
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
 }
