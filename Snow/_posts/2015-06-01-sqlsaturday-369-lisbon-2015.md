@@ -10,17 +10,17 @@ Last May 16 I attended [SQLSaturday at Lisbon](http://www.sqlsaturday.com/369), 
 
 ## What's in it for me
 
-As I'm not a SQL Server expert by any means, some of the sessions were just beyond my reach, not that I was afraid of getting my head blown by Paul White ([@SQL_Kiwi](http://twitter.com/SQL_Kiwi)), Dejan Sarka ([DejanSarka](http://twitter.com/DejanSarka)), Mark Broadbent ([retracement](http://twitter.com/retracement)) or Milos Radivojevic ([MilosSQL](https://twitter.com/MilosSQL)), to name a few SQL *superstars* that I skipped this year, but there was so many to choose from and the quality bar was so high that choices had to be made.
+As I'm not a SQL Server expert by any means, some of the sessions were just beyond my reach, not that I was afraid of getting my head blown by Paul White ([@SQL_Kiwi](http://twitter.com/SQL_Kiwi)), Dejan Sarka ([@DejanSarka](http://twitter.com/DejanSarka)), Mark Broadbent ([@retracement](http://twitter.com/retracement)) or Milos Radivojevic ([@MilosSQL](https://twitter.com/MilosSQL)), to name a few SQL *superstars* that I skipped this year, but there was so many to choose from and the quality bar was so high that choices had to be made.
 
 From the lineup, I've selected the themes with content that I could leverage in the next few months, especially those related to Business Intelligence, one of the current big trends on the field.
 
 The sessions I attended were:
-* Agile BI - [Stephanie Locke](http://twitter.com/SteffLocke)
-* The Amazing Power BI vNext - All about the new version of Power BI! - [Rui Quintino](http://twitter.com/rquintino)
-* Tools and Tips: From accidental to efficient Data Warehouse developer - [Cathrine Wilhelmsen](http://twitter.com/cathrinew)
-* PowerBI for Developers - [Rui Romano](http://twitter.com/RuiRomano)
-* Python and R for SQL Server and Business Intelligence: Be a data analysis Rock Star! - [Jen Stirrup](http://twitter.com/jenstirrup)
-* SQL vNext Business Intelligence - [Bruno Basto](http://twitter.com/bvbasto)
+- Agile BI - [Stephanie Locke](http://twitter.com/SteffLocke)
+- The Amazing Power BI vNext - All about the new version of Power BI! - [Rui Quintino](http://twitter.com/rquintino)
+- Tools and Tips: From accidental to efficient Data Warehouse developer - [Cathrine Wilhelmsen](http://twitter.com/cathrinew)
+- PowerBI for Developers - [Rui Romano](http://twitter.com/RuiRomano)
+- Python and R for SQL Server and Business Intelligence: Be a data analysis Rock Star! - [Jen Stirrup](http://twitter.com/jenstirrup)
+- SQL vNext Business Intelligence - [Bruno Basto](http://twitter.com/bvbasto)
 
 
 ## The key takeaways
