@@ -11,6 +11,10 @@
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="last-modified" content="@Model.GeneratedDate" />
     <meta name="keywords" content="@keywords" />
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS - Nelson Reis Blog" href="/rss.xml" />
+    <link rel="alternate" type="application/atom+xml" title="Atom - Nelson Reis Blog" href="/feed.xml" />
+    
     @if (IsSectionDefined("title"))
     {
         <title>@RenderSection("title")</title>
