@@ -1368,3 +1368,7 @@ kbd {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
 }
+
+#disqus_thread {
+    margin-top: 60px;
+}
