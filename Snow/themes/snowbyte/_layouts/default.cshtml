@@ -11,8 +11,15 @@
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="last-modified" content="@Model.GeneratedDate" />
     <meta name="keywords" content="@keywords" />
-    <title>Nelson Reis</title>
-    <meta name="description" content="Nelson Reis - blog" />
+    @if (IsSectionDefined("title"))
+    {
+        <title>@RenderSection("title")</title>
+    }
+    else
+    {
+        <title>Nelson Reis</title>
+    }
+    <meta name="description" content="Nelson Reis Blog" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
     <link rel="shortcut icon" href="/favicon.ico">
