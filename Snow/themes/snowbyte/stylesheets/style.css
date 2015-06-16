@@ -1369,6 +1369,10 @@ kbd {
     -webkit-border-radius: 50%;
 }
 
+.addthis_sharing_toolbox {
+    margin-top: 45px;
+}
+
 #disqus_thread {
-    margin-top: 60px;
+    margin-top: 30px;
 }
