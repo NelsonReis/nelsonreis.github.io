@@ -15,6 +15,9 @@
           <li><a href="/category/@category.ToUrlSlug()" title="@category">@category</a></li>
         }
         </ul>
+        @if (postPaged.MetaDescription != null) {
+          <a href="@postPaged.Url"><img src="@postPaged.MetaDescription" class="image-title" alt="@postPaged.Title"></a>
+        }
       </div>
       @Html.RenderSeries(postPaged)
       @Html.Raw(postPaged.ContentExcerpt)

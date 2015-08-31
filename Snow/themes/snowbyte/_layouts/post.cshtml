@@ -16,6 +16,9 @@
           <li><a href="/category/@category.Url" title="@category">@category.Name</a></li>
         }
         </ul>
+        @if (Model.MetaDescription != null) {
+          <img src="@Model.MetaDescription" class="image-title" alt="Title image for: @Model.Title">
+        }
       </div>
 
       <!--div class="addthis_toolbox addthis_default_style" style="float:right;">
