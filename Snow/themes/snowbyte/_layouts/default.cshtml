@@ -27,6 +27,10 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
     <link rel="shortcut icon" href="/favicon.ico">
+    @if (IsSectionDefined("metafacebook"))
+    {
+        @RenderSection("metafacebook")
+    }
     @Html.CanonicalUrl()
 </head>
 <body class="home blog">

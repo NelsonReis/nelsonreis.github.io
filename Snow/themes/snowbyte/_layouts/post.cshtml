@@ -6,6 +6,12 @@
 @section title{
     @Model.Title - Nelson Reis
 }
+@section metafacebook{
+  <meta property="og:title" content="@Model.Title - Nelson Reis" />
+  @if (Model.MetaDescription != null) {
+    <meta property="og:image" content="@Model.MetaDescription" />
+  }
+}
 
 <div class="post">
     <h1>@Model.Title</h1> 
