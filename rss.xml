@@ -1,4 +1,106 @@
-<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Nelson Reis Blog</title><link>http://www.nelsonreis.net/rss.xml</link><description>Nelson Reis Blog</description><item><guid isPermaLink="true">http://www.nelsonreis.net/2015/06/01/sqlsaturday-369-lisbon-2015/</guid><link>http://www.nelsonreis.net/2015/06/01/sqlsaturday-369-lisbon-2015/</link><author>nelsonfsr@gmail.com</author><category>Community</category><category>SQL Server</category><title>SQLSaturday #369 Lisbon 2015</title><description>&lt;p&gt;Last May 16 I attended &lt;a href="http://www.sqlsaturday.com/369"&gt;SQLSaturday at Lisbon&lt;/a&gt;, Portugal, a free training event mainly targeted at SQL Server and Data professionals. The event featured a total of 6 session slots distributed over the following 7 (!) tracks: Performance, Business Intelligence, Agile &amp;amp; Cloud, Analytics &amp;amp; NonRelational, DBA, Hands-On Lab and SQL Server 2016.&lt;/p&gt;
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Nelson Reis Blog</title><link>http://www.nelsonreis.net/rss.xml</link><description>Nelson Reis Blog</description><item><guid isPermaLink="true">http://www.nelsonreis.net/2015/09/01/how-to-setup-bower-in-visual-studio-2015/</guid><link>http://www.nelsonreis.net/2015/09/01/how-to-setup-bower-in-visual-studio-2015/</link><author>nelsonfsr@gmail.com</author><category>Visual Studio</category><category>Web</category><title>How to setup Bower in Visual Studio 2015</title><description>&lt;p&gt;In my &lt;a href="http://nelsonreis.net/2015/08/31/when-to-use-nuget-and-bower/"&gt;previous article&lt;/a&gt; I've compared &lt;a href="http://www.nuget.org/"&gt;NuGet&lt;/a&gt; and &lt;a href="http://bower.io/"&gt;&lt;strong&gt;Bower&lt;/strong&gt;&lt;/a&gt;, explaining where we can use each one in order to make use of their advantages.&lt;/p&gt;
+
+&lt;h2&gt;Prior notice&lt;/h2&gt;
+
+&lt;p&gt;Visual Studio 2015 combined with ASP.NET 5 templates already have Bower integrated by default, but in this example I'm assuming we are developing an ASP.NET 4.6 + MVC 5 web application.&lt;/p&gt;
+
+</description><pubDate>Mon, 31 Aug 2015 23:00:00 Z</pubDate><a10:updated>2015-08-31T23:00:00Z</a10:updated><a10:content type="html">&lt;p&gt;In my &lt;a href="http://nelsonreis.net/2015/08/31/when-to-use-nuget-and-bower/"&gt;previous article&lt;/a&gt; I've compared &lt;a href="http://www.nuget.org/"&gt;NuGet&lt;/a&gt; and &lt;a href="http://bower.io/"&gt;&lt;strong&gt;Bower&lt;/strong&gt;&lt;/a&gt;, explaining where we can use each one in order to make use of their advantages.&lt;/p&gt;
+
+&lt;h2&gt;Prior notice&lt;/h2&gt;
+
+&lt;p&gt;Visual Studio 2015 combined with ASP.NET 5 templates already have Bower integrated by default, but in this example I'm assuming we are developing an ASP.NET 4.6 + MVC 5 web application.&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;p&gt;Bower depends on &lt;strong&gt;npm&lt;/strong&gt;. What's that? Well, that's &lt;em&gt;another&lt;/em&gt; package manager, but let's just say that it will help us install Bower and leave it there.
+To do that, we'll need to open a &lt;strong&gt;Command Prompt&lt;/strong&gt; on the same folder as our project. If you don't want to leave Visual Studio, you can make use of the &lt;strong&gt;Package Manager Console&lt;/strong&gt; instead.
+If you didn't already installed &lt;strong&gt;Git for Windows&lt;/strong&gt;, you'll have to, because Bower let's you install packages directly from a Git endpoint. Go to &lt;a href="http://git-for-windows.github.io/"&gt;Git for Windows&lt;/a&gt; and install.&lt;/p&gt;
+
+&lt;h2&gt;Hands-on&lt;/h2&gt;
+
+&lt;p&gt;Start by installing Bower, typing:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;npm install -g bower
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That will install Bower on a global location so that it will become available at the command line. It still didn't added anything to the project. Before adding packages, let's create a &lt;code&gt;bower.json&lt;/code&gt; file where we'll save all the packages we install in our project (it works just like the &lt;code&gt;packages.config&lt;/code&gt; for NuGet).
+If you're using the Package Manager Console, add a new item to the project and select &lt;strong&gt;Bower Configuration File&lt;/strong&gt; (inside Web &gt; General).&lt;/p&gt;
+
+&lt;p&gt;If you're using the Command Prompt, you can add the same file by typing (the command won't work on the Package Manager Console):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;bower init
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After typing the command above, Bower will ask for information so it can create a &lt;code&gt;bower.json&lt;/code&gt; file accordingly to the needs of your project. If you don't know what to choose in any of the questions, press &lt;code&gt;Enter&lt;/code&gt; and let Bower fill in the default values, which should be fine.&lt;/p&gt;
+
+&lt;h2&gt;Adding packages&lt;/h2&gt;
+
+&lt;p&gt;Now we're ready to add packages to our project. Bower let's you search for packages in the command line, but I rather use Bower's website: http://bower.io/search/&lt;/p&gt;
+
+&lt;p&gt;Once you know what to install, you can type:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;bower install jquery --save
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;--save&lt;/code&gt; argument will add the package to the &lt;code&gt;bower.json&lt;/code&gt;, so later we can update the package or reinstall the missing packages, just like NuGet does.&lt;/p&gt;
+
+&lt;p&gt;The power of Visual Studio shines if you want to avoid the Command Prompt anytime you need to add one more package. Instead, you can install packages by opening the &lt;code&gt;bower.json&lt;/code&gt; file and adding the package to the &lt;code&gt;dependencies&lt;/code&gt; node.&lt;/p&gt;
+
+&lt;p&gt;As soon as you start typing the name of the package, Visual Studio will search it for you and present the available options &lt;em&gt;intellisense style&lt;/em&gt;. You'll get the same behavior for the version.&lt;/p&gt;
+</a10:content></item><item><guid isPermaLink="true">http://www.nelsonreis.net/2015/08/31/when-to-use-nuget-and-bower/</guid><link>http://www.nelsonreis.net/2015/08/31/when-to-use-nuget-and-bower/</link><author>nelsonfsr@gmail.com</author><category>Visual Studio</category><category>Web</category><title>When to use NuGet and Bower</title><description>&lt;p&gt;I believe that &lt;a href="http://www.nuget.org/"&gt;NuGet&lt;/a&gt; has been one of the most significant tools added to Visual Studio since it was introduced in the 2010 version. It's hard to imagine anyone working on a .NET project over the last few years and still be able to keep NuGet packages out of the solution.
+&lt;em&gt;Of course I'm being a bit extreme here, but if that's your case, please make a comment below, I really would like to know more details on that.&lt;/em&gt;&lt;/p&gt;
+
+</description><pubDate>Sun, 30 Aug 2015 23:00:00 Z</pubDate><a10:updated>2015-08-30T23:00:00Z</a10:updated><a10:content type="html">&lt;p&gt;I believe that &lt;a href="http://www.nuget.org/"&gt;NuGet&lt;/a&gt; has been one of the most significant tools added to Visual Studio since it was introduced in the 2010 version. It's hard to imagine anyone working on a .NET project over the last few years and still be able to keep NuGet packages out of the solution.
+&lt;em&gt;Of course I'm being a bit extreme here, but if that's your case, please make a comment below, I really would like to know more details on that.&lt;/em&gt;&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;p&gt;With NuGet we could easily &lt;em&gt;"add a reference"&lt;/em&gt; to an opensource project, provided it had a NuGet package available, and thus maintain the references updated with a simple action on the UI. That's what helped to drive the .NET development community towards opensource initiatives.&lt;/p&gt;
+
+&lt;h2&gt;So, is NuGet dead?&lt;/h2&gt;
+
+&lt;p&gt;Far from it! But despite all the goodness that NuGet brought to the .NET world (or should I say sweetness), some bitterness arises when working with web frontend NuGet packages (either in plain ASP.NET or ASP.NET MVC projects).
+NuGet packages work great for including compiled external libraries into my projects, so I will definitely continue to use NuGet for the backend stuff.&lt;/p&gt;
+
+&lt;p&gt;One problem with the frontend NuGet packages (CSS and JavaScript) is that when you add them, each one seems to have it's own will, getting scattered all over the project folders, forcing me to find its files in whichever folder it choses.&lt;/p&gt;
+
+&lt;p&gt;Another problem is that there is a lack of NuGet packages for a lot of very used JavaScript libraries, which are available for other web development communities, or at least the available packages take longer to be updated. That makes it seem as if the .NET web development community is lagging behind.&lt;/p&gt;
+
+&lt;h2&gt;Introducing Bower&lt;/h2&gt;
+
+&lt;p&gt;Starting with Visual Studio 2015, the recommended method for adding frontend web packages to your projects is using &lt;a href="http://bower.io/"&gt;&lt;strong&gt;Bower&lt;/strong&gt;&lt;/a&gt;, &lt;em&gt;a package manager for the web&lt;/em&gt;, as they call it.&lt;/p&gt;
+
+&lt;p&gt;Bower packages get installed to a folder with the name of each package inside a &lt;code&gt;bower_components&lt;/code&gt; folder on the root of your project. No more hunting around the installed files.&lt;/p&gt;
+
+&lt;p&gt;If your team or environment uses other tools besides Visual Studio for web development, Bower brings a more clean path to achieve what others are doing, since it's commonly used amongst web developers from other communities (Node.js, for instance). That also brings a bigger number of available packages, as well as faster updates.&lt;/p&gt;
+
+&lt;h2&gt;NuGet or Bower?&lt;/h2&gt;
+
+&lt;p&gt;To be clear, I would recommned all server-side packages to be installed with &lt;strong&gt;NuGet&lt;/strong&gt;, for example:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.nuget.org/packages/Ninject/"&gt;Ninject&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.nuget.org/packages/EntityFramework/"&gt;EntityFramework&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.nuget.org/packages/NUnit/"&gt;NUnit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.nuget.org/packages/log4net/"&gt;log4net&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;all the &lt;a href="http://www.nuget.org/packages?q=microsoft.aspnet"&gt;Microsoft.AspNet&lt;/a&gt; packages (the MVC framework, OWIN, Razor, WebApi, and so on)&lt;/li&gt;
+&lt;li&gt;you've got the picture&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As for &lt;strong&gt;Bower&lt;/strong&gt;, we stick to the web frontend packages, like the ones below:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://jquery.com/"&gt;jQuery&lt;/a&gt; (&lt;a href="http://github.com/jquery/jquery"&gt;source&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://getbootstrap.com/"&gt;Bootstrap&lt;/a&gt; (&lt;a href="http://github.com/twbs/bootstrap"&gt;source&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://angularjs.org/"&gt;AngularJS&lt;/a&gt; (&lt;a href="http://github.com/angular/angular.js"&gt;source&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://select2.github.io/"&gt;Select2&lt;/a&gt; (&lt;a href="http://github.com/select2/select2"&gt;source&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.datatables.net/"&gt;DataTables&lt;/a&gt; (&lt;a href="http://github.com/DataTables/DataTables"&gt;source&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://d3js.org/"&gt;D3.js&lt;/a&gt; (&lt;a href="http://github.com/mbostock/d3"&gt;source&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://momentjs.com/"&gt;Moment.js&lt;/a&gt; (&lt;a href="http://github.com/moment/moment/"&gt;source&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On my next blog post, I'll show you how we can add Bower to a Visual Studio project.&lt;/p&gt;
+</a10:content></item><item><guid isPermaLink="true">http://www.nelsonreis.net/2015/06/01/sqlsaturday-369-lisbon-2015/</guid><link>http://www.nelsonreis.net/2015/06/01/sqlsaturday-369-lisbon-2015/</link><author>nelsonfsr@gmail.com</author><category>Community</category><category>SQL Server</category><title>SQLSaturday #369 Lisbon 2015</title><description>&lt;p&gt;Last May 16 I attended &lt;a href="http://www.sqlsaturday.com/369"&gt;SQLSaturday at Lisbon&lt;/a&gt;, Portugal, a free training event mainly targeted at SQL Server and Data professionals. The event featured a total of 6 session slots distributed over the following 7 (!) tracks: Performance, Business Intelligence, Agile &amp;amp; Cloud, Analytics &amp;amp; NonRelational, DBA, Hands-On Lab and SQL Server 2016.&lt;/p&gt;
 
 </description><pubDate>Sun, 31 May 2015 23:00:00 Z</pubDate><a10:updated>2015-05-31T23:00:00Z</a10:updated><a10:content type="html">&lt;p&gt;Last May 16 I attended &lt;a href="http://www.sqlsaturday.com/369"&gt;SQLSaturday at Lisbon&lt;/a&gt;, Portugal, a free training event mainly targeted at SQL Server and Data professionals. The event featured a total of 6 session slots distributed over the following 7 (!) tracks: Performance, Business Intelligence, Agile &amp;amp; Cloud, Analytics &amp;amp; NonRelational, DBA, Hands-On Lab and SQL Server 2016.&lt;/p&gt;
 

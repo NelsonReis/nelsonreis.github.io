@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="last-modified" content="2015-08-31T22:51:30.8250582+01:00" />
-    <meta name="keywords" content="Community,SQL Server" />
+    <meta name="keywords" content="Visual Studio,Web" />
     
     <link rel="alternate" type="application/rss+xml" title="RSS - Nelson Reis Blog" href="/rss.xml" />
     <link rel="alternate" type="application/atom+xml" title="Atom - Nelson Reis Blog" href="/feed.xml" />
     
         <title>
-    SQLSaturday #369 Lisbon 2015 - Nelson Reis
+    How to setup Bower in Visual Studio 2015 - Nelson Reis
 </title>
     <meta name="description" content="Nelson Reis Blog" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="canonical" href="http://www.nelsonreis.net/2015/06/01/sqlsaturday-369-lisbon-2015/" />
+    <link rel="canonical" href="http://www.nelsonreis.net/2015/09/01/how-to-setup-bower-in-visual-studio-2015/" />
 </head>
 <body class="home blog">
     <div id="page" class="hfeed site">
@@ -54,13 +54,14 @@
                   
 
 <div class="post">
-    <h1>SQLSaturday #369 Lisbon 2015</h1> 
+    <h1>How to setup Bower in Visual Studio 2015</h1> 
       <div class="meta">
-        <p class="posted">01 jun 2015</p>
+        <p class="posted">01 set 2015</p>
         <ul class="categories">
-          <li><a href="/category/community" title="Snow.Models.Category">Community</a></li>
-          <li><a href="/category/sql-server" title="Snow.Models.Category">SQL Server</a></li>
+          <li><a href="/category/visual-studio" title="Snow.Models.Category">Visual Studio</a></li>
+          <li><a href="/category/web" title="Snow.Models.Category">Web</a></li>
         </ul>
+          <img src="/images/title-bower.png" class="image-title" alt="Title image for: How to setup Bower in Visual Studio 2015">
       </div>
 
       <!--div class="addthis_toolbox addthis_default_style" style="float:right;">
@@ -74,40 +75,49 @@
     
     
         
-    <p>Last May 16 I attended <a href="http://www.sqlsaturday.com/369">SQLSaturday at Lisbon</a>, Portugal, a free training event mainly targeted at SQL Server and Data professionals. The event featured a total of 6 session slots distributed over the following 7 (!) tracks: Performance, Business Intelligence, Agile &amp; Cloud, Analytics &amp; NonRelational, DBA, Hands-On Lab and SQL Server 2016.</p>
+    <p>In my <a href="http://nelsonreis.net/2015/08/31/when-to-use-nuget-and-bower/">previous article</a> I've compared <a href="http://www.nuget.org/">NuGet</a> and <a href="http://bower.io/"><strong>Bower</strong></a>, explaining where we can use each one in order to make use of their advantages.</p>
+
+<h2>Prior notice</h2>
+
+<p>Visual Studio 2015 combined with ASP.NET 5 templates already have Bower integrated by default, but in this example I'm assuming we are developing an ASP.NET 4.6 + MVC 5 web application.</p>
 
 <!--excerpt-->
 
-<h2>What's in it for me</h2>
+<p>Bower depends on <strong>npm</strong>. What's that? Well, that's <em>another</em> package manager, but let's just say that it will help us install Bower and leave it there.
+To do that, we'll need to open a <strong>Command Prompt</strong> on the same folder as our project. If you don't want to leave Visual Studio, you can make use of the <strong>Package Manager Console</strong> instead.
+If you didn't already installed <strong>Git for Windows</strong>, you'll have to, because Bower let's you install packages directly from a Git endpoint. Go to <a href="http://git-for-windows.github.io/">Git for Windows</a> and install.</p>
 
-<p>As I'm not a SQL Server expert by any means, some of the sessions were just beyond my reach, not that I was afraid of getting my head blown by Paul White (<a href="http://twitter.com/SQL_Kiwi">@SQL_Kiwi</a>), Dejan Sarka (<a href="http://twitter.com/DejanSarka">@DejanSarka</a>), Mark Broadbent (<a href="http://twitter.com/retracement">@retracement</a>) or Milos Radivojevic (<a href="https://twitter.com/MilosSQL">@MilosSQL</a>), to name a few SQL <em>superstars</em> that I skipped this year, but there was so many to choose from and the quality bar was so high that choices had to be made.</p>
+<h2>Hands-on</h2>
 
-<p>From the lineup, I've selected the themes with content that I could leverage in the next few months, especially those related to Business Intelligence, one of the current big trends on the field.</p>
+<p>Start by installing Bower, typing:</p>
 
-<p>The sessions I attended were:</p>
+<pre><code>npm install -g bower
+</code></pre>
 
-<ul>
-<li>Agile BI - <a href="http://twitter.com/SteffLocke">Stephanie Locke</a></li>
-<li>The Amazing Power BI vNext - All about the new version of Power BI! - <a href="http://twitter.com/rquintino">Rui Quintino</a></li>
-<li>Tools and Tips: From accidental to efficient Data Warehouse developer - <a href="http://twitter.com/cathrinew">Cathrine Wilhelmsen</a></li>
-<li>PowerBI for Developers - <a href="http://twitter.com/RuiRomano">Rui Romano</a></li>
-<li>Python and R for SQL Server and Business Intelligence: Be a data analysis Rock Star! - <a href="http://twitter.com/jenstirrup">Jen Stirrup</a></li>
-<li>SQL vNext Business Intelligence - <a href="http://twitter.com/bvbasto">Bruno Basto</a></li>
-</ul>
+<p>That will install Bower on a global location so that it will become available at the command line. It still didn't added anything to the project. Before adding packages, let's create a <code>bower.json</code> file where we'll save all the packages we install in our project (it works just like the <code>packages.config</code> for NuGet).
+If you're using the Package Manager Console, add a new item to the project and select <strong>Bower Configuration File</strong> (inside Web > General).</p>
 
-<h2>The key takeaways</h2>
+<p>If you're using the Command Prompt, you can add the same file by typing (the command won't work on the Package Manager Console):</p>
 
-<ul>
-<li>Last year we had the chance to grasp some real use cases of Power BI (first launched in 2013). This year, Microsoft has shown some <a href="http://blogs.msdn.com/b/powerbi/archive/2015/05/08/a-fresh-new-look-for-the-power-bi-preview.aspx">major improvements</a> on this platform and started to reveal a development model on top of it (still in the works) which will allow for a lot more possibilities.</li>
-<li>Another gap that Microsoft was needing to bridge was a solution for cross-platform dashboards, that could be fed by multiple kinds of data sources. I think that is now solved with the <a href="http://blogs.microsoft.com/blog/2015/04/14/microsoft-acquires-mobile-business-intelligence-leader-datazen">acquisition of DataZen</a> and the inclusion of the product into the SQL Server Enterprise package.</li>
-<li>It's becoming increasingly more difficult to justify some enterprise policies that want to keep organization data outside cloud services, Microsoft Azure is just not stopping to release new gems every other week.</li>
-<li>The new Microsoft embraces all kind of technology we can imagine. One more proof of that is the integration of R in the upcoming SQL Server 2016.</li>
-<li>There are a lot of opportunities for improvement of my skills on solution development within the Microsoft SQL Server stack. The sessions from <a href="http://www.sqlsaturday.com/369/Sessions/Details.aspx?sid=25275">Stephanie Locke</a> and <a href="http://www.sqlsaturday.com/369/Sessions/Details.aspx?sid=11235">Cathrine Wilhelmsen</a> were just amazing.</li>
-</ul>
+<pre><code>bower init
+</code></pre>
 
-<h2>In conclusion</h2>
+<p>After typing the command above, Bower will ask for information so it can create a <code>bower.json</code> file accordingly to the needs of your project. If you don't know what to choose in any of the questions, press <code>Enter</code> and let Bower fill in the default values, which should be fine.</p>
 
-<p>For this one day, a good part of the SQL community throughout the world came together, and if you were around and missed it, to bad for you. But there is hope, because these <a href="http://www.sqlport.com/sql-server/sobre-sqlport">amazing organizers</a> are already setting up <a href="http://www.sqlsaturday.com/429">SQLSaturday Oporto</a> for October 3. Go ahead and register now!</p>
+<h2>Adding packages</h2>
+
+<p>Now we're ready to add packages to our project. Bower let's you search for packages in the command line, but I rather use Bower's website: http://bower.io/search/</p>
+
+<p>Once you know what to install, you can type:</p>
+
+<pre><code>bower install jquery --save
+</code></pre>
+
+<p>The <code>--save</code> argument will add the package to the <code>bower.json</code>, so later we can update the package or reinstall the missing packages, just like NuGet does.</p>
+
+<p>The power of Visual Studio shines if you want to avoid the Command Prompt anytime you need to add one more package. Instead, you can install packages by opening the <code>bower.json</code> file and adding the package to the <code>dependencies</code> node.</p>
+
+<p>As soon as you start typing the name of the package, Visual Studio will search it for you and present the available options <em>intellisense style</em>. You'll get the same behavior for the version.</p>
 
 
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-556efd0945bf57e7" async="async"></script>
@@ -120,14 +130,14 @@
             reload: true,
             config: function () {
                 //this.page.identifier = '';
-                this.page.url = 'http://www.nelsonreis.net/2015/06/01/sqlsaturday-369-lisbon-2015/';
+                this.page.url = 'http://www.nelsonreis.net/2015/09/01/how-to-setup-bower-in-visual-studio-2015/';
                 //this.page.title = '';
             }
         });
     };
 
     var disqus_shortname = 'nelsonreis';
-    var disqus_url = 'http://www.nelsonreis.net/2015/06/01/sqlsaturday-369-lisbon-2015/';
+    var disqus_url = 'http://www.nelsonreis.net/2015/09/01/how-to-setup-bower-in-visual-studio-2015/';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

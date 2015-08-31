@@ -1364,9 +1364,9 @@ kbd {
 }
 
 .avatar {
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
+    border-radius: 10%;
+    -moz-border-radius: 10%;
+    -webkit-border-radius: 10%;
 }
 
 .addthis_sharing_toolbox {
@@ -1375,4 +1375,9 @@ kbd {
 
 #disqus_thread {
     margin-top: 30px;
+}
+
+.image-title {
+    max-width: 100%;
+    height: auto;
 }
