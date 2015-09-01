@@ -1,53 +1,4 @@
-<feed xmlns="http://www.w3.org/2005/Atom"><title type="text">Nelson Reis Blog</title><subtitle type="text">Nelson Reis Blog</subtitle><id>http://www.nelsonreis.net/</id><updated>2015-08-31T23:15:13+01:00</updated><author><name>Nelson Reis</name><uri>http://www.nelsonreis.net</uri><email>nelsonfsr@gmail.com</email></author><generator>Sandra.Snow Atom Generator</generator><link rel="alternate" href="http://www.nelsonreis.net/feed.xml" /><link rel="self" type="text/html" title="Nelson Reis Blog" href="http://www.nelsonreis.net/feed.xml" /><entry><id>http://www.nelsonreis.net/2015/09/01/how-to-setup-bower-in-visual-studio-2015/</id><title type="text">How to setup Bower in Visual Studio 2015</title><summary type="html">&lt;p&gt;In my &lt;a href="http://nelsonreis.net/2015/08/31/when-to-use-nuget-and-bower/"&gt;previous article&lt;/a&gt; I've compared &lt;a href="http://www.nuget.org/"&gt;NuGet&lt;/a&gt; and &lt;a href="http://bower.io/"&gt;&lt;strong&gt;Bower&lt;/strong&gt;&lt;/a&gt;, explaining where we can use each one in order to make use of their advantages.&lt;/p&gt;
-
-&lt;h2&gt;Prior notice&lt;/h2&gt;
-
-&lt;p&gt;Visual Studio 2015 combined with ASP.NET 5 templates already have Bower integrated by default, but in this example I'm assuming we are developing an ASP.NET 4.6 + MVC 5 web application.&lt;/p&gt;
-
-</summary><published>2015-08-31T23:00:00Z</published><updated>2015-08-31T23:00:00Z</updated><link rel="alternate" href="http://www.nelsonreis.net/2015/09/01/how-to-setup-bower-in-visual-studio-2015/" /><content type="html">&lt;p&gt;In my &lt;a href="http://nelsonreis.net/2015/08/31/when-to-use-nuget-and-bower/"&gt;previous article&lt;/a&gt; I've compared &lt;a href="http://www.nuget.org/"&gt;NuGet&lt;/a&gt; and &lt;a href="http://bower.io/"&gt;&lt;strong&gt;Bower&lt;/strong&gt;&lt;/a&gt;, explaining where we can use each one in order to make use of their advantages.&lt;/p&gt;
-
-&lt;h2&gt;Prior notice&lt;/h2&gt;
-
-&lt;p&gt;Visual Studio 2015 combined with ASP.NET 5 templates already have Bower integrated by default, but in this example I'm assuming we are developing an ASP.NET 4.6 + MVC 5 web application.&lt;/p&gt;
-
-&lt;!--excerpt--&gt;
-
-&lt;p&gt;Bower depends on &lt;strong&gt;npm&lt;/strong&gt;. What's that? Well, that's &lt;em&gt;another&lt;/em&gt; package manager, but let's just say that it will help us install Bower and leave it there.
-To do that, we'll need to open a &lt;strong&gt;Command Prompt&lt;/strong&gt; on the same folder as our project. If you don't want to leave Visual Studio, you can make use of the &lt;strong&gt;Package Manager Console&lt;/strong&gt; instead.
-If you didn't already installed &lt;strong&gt;Git for Windows&lt;/strong&gt;, you'll have to, because Bower let's you install packages directly from a Git endpoint. Go to &lt;a href="http://git-for-windows.github.io/"&gt;Git for Windows&lt;/a&gt; and install.&lt;/p&gt;
-
-&lt;h2&gt;Hands-on&lt;/h2&gt;
-
-&lt;p&gt;Start by installing Bower, typing:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;npm install -g bower
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;That will install Bower on a global location so that it will become available at the command line. It still didn't added anything to the project. Before adding packages, let's create a &lt;code&gt;bower.json&lt;/code&gt; file where we'll save all the packages we install in our project (it works just like the &lt;code&gt;packages.config&lt;/code&gt; for NuGet).
-If you're using the Package Manager Console, add a new item to the project and select &lt;strong&gt;Bower Configuration File&lt;/strong&gt; (inside Web &gt; General).&lt;/p&gt;
-
-&lt;p&gt;If you're using the Command Prompt, you can add the same file by typing (the command won't work on the Package Manager Console):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;bower init
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;After typing the command above, Bower will ask for information so it can create a &lt;code&gt;bower.json&lt;/code&gt; file accordingly to the needs of your project. If you don't know what to choose in any of the questions, press &lt;code&gt;Enter&lt;/code&gt; and let Bower fill in the default values, which should be fine.&lt;/p&gt;
-
-&lt;h2&gt;Adding packages&lt;/h2&gt;
-
-&lt;p&gt;Now we're ready to add packages to our project. Bower let's you search for packages in the command line, but I rather use Bower's website: http://bower.io/search/&lt;/p&gt;
-
-&lt;p&gt;Once you know what to install, you can type:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;bower install jquery --save
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;code&gt;--save&lt;/code&gt; argument will add the package to the &lt;code&gt;bower.json&lt;/code&gt;, so later we can update the package or reinstall the missing packages, just like NuGet does.&lt;/p&gt;
-
-&lt;p&gt;The power of Visual Studio shines if you want to avoid the Command Prompt anytime you need to add one more package. Instead, you can install packages by opening the &lt;code&gt;bower.json&lt;/code&gt; file and adding the package to the &lt;code&gt;dependencies&lt;/code&gt; node.&lt;/p&gt;
-
-&lt;p&gt;As soon as you start typing the name of the package, Visual Studio will search it for you and present the available options &lt;em&gt;intellisense style&lt;/em&gt;. You'll get the same behavior for the version.&lt;/p&gt;
-</content></entry><entry><id>http://www.nelsonreis.net/2015/08/31/when-to-use-nuget-and-bower/</id><title type="text">When to use NuGet and Bower</title><summary type="html">&lt;p&gt;I believe that &lt;a href="http://www.nuget.org/"&gt;NuGet&lt;/a&gt; has been one of the most significant tools added to Visual Studio since it was introduced in the 2010 version. It's hard to imagine anyone working on a .NET project over the last few years and still be able to keep NuGet packages out of the solution.
+<feed xmlns="http://www.w3.org/2005/Atom"><title type="text">Nelson Reis Blog</title><subtitle type="text">Nelson Reis Blog</subtitle><id>http://www.nelsonreis.net/</id><updated>2015-09-01T01:11:28+01:00</updated><author><name>Nelson Reis</name><uri>http://www.nelsonreis.net</uri><email>nelsonfsr@gmail.com</email></author><generator>Sandra.Snow Atom Generator</generator><link rel="alternate" href="http://www.nelsonreis.net/feed.xml" /><link rel="self" type="text/html" title="Nelson Reis Blog" href="http://www.nelsonreis.net/feed.xml" /><entry><id>http://www.nelsonreis.net/2015/08/31/when-to-use-nuget-and-bower/</id><title type="text">When to use NuGet and Bower</title><summary type="html">&lt;p&gt;I believe that &lt;a href="http://www.nuget.org/"&gt;NuGet&lt;/a&gt; has been one of the most significant tools added to Visual Studio since it was introduced in the 2010 version. It's hard to imagine anyone working on a .NET project over the last few years and still be able to keep NuGet packages out of the solution.
 &lt;em&gt;Of course I'm being a bit extreme here, but if that's your case, please make a comment below, I really would like to know more details on that.&lt;/em&gt;&lt;/p&gt;
 
 </summary><published>2015-08-30T23:00:00Z</published><updated>2015-08-30T23:00:00Z</updated><link rel="alternate" href="http://www.nelsonreis.net/2015/08/31/when-to-use-nuget-and-bower/" /><content type="html">&lt;p&gt;I believe that &lt;a href="http://www.nuget.org/"&gt;NuGet&lt;/a&gt; has been one of the most significant tools added to Visual Studio since it was introduced in the 2010 version. It's hard to imagine anyone working on a .NET project over the last few years and still be able to keep NuGet packages out of the solution.
@@ -179,4 +130,6 @@ NuGet packages work great for including compiled external libraries into my proj
 &lt;p&gt;So, those are my viewpoints about blogging, talking to this imaginary and very skeptical person, dear reader and future self.&lt;/p&gt;
 
 &lt;p&gt;I hope that on future posts you can find something valuable. In the meantime, you can start by following my blog or contact me anytime you want.&lt;/p&gt;
+
+&lt;h6&gt;&lt;a href="http://www.morguefile.com/archive/display/3303"&gt;Photo&lt;/a&gt; by mconnors&lt;/h6&gt;
 </content></entry></feed>
