@@ -2,6 +2,7 @@
 layout: post
 category: General
 title: And so I blog
+metadescription: /images/title-typewriter.png
 ---
 
 I've been wanting to setup a blog for myself for quite some time. Today, finally, I did it.
@@ -28,3 +29,5 @@ Over the years I've learned that if you have a problem or a solution of some sor
 So, those are my viewpoints about blogging, talking to this imaginary and very skeptical person, dear reader and future self.
 
 I hope that on future posts you can find something valuable. In the meantime, you can start by following my blog or contact me anytime you want.
+
+###### [Photo](http://www.morguefile.com/archive/display/3303) by mconnors

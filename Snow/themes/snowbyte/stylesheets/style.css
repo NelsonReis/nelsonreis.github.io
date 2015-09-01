@@ -799,6 +799,12 @@ h4, h5, h6 {
     font-weight: 300;
 }
 
+h6 {
+    font-size: 14px;
+    text-align: right;
+    margin-right: 25px;
+}
+
 #main article {
     padding: 10px 0 40px 0;
     border-bottom: solid 1px #ddd;

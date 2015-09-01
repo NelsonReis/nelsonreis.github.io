@@ -2,6 +2,7 @@
 layout: post
 category: Community, SQL Server
 title: SQLSaturday #369 Lisbon 2015
+metadescription: /images/title-sqlsaturday-369.png
 ---
 
 Last May 16 I attended [SQLSaturday at Lisbon](http://www.sqlsaturday.com/369), Portugal, a free training event mainly targeted at SQL Server and Data professionals. The event featured a total of 6 session slots distributed over the following 7 (!) tracks: Performance, Business Intelligence, Agile & Cloud, Analytics & NonRelational, DBA, Hands-On Lab and SQL Server 2016.
