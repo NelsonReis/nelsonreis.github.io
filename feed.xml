@@ -1,4 +1,41 @@
-<feed xmlns="http://www.w3.org/2005/Atom"><title type="text">Nelson Reis Blog</title><subtitle type="text">Nelson Reis Blog</subtitle><id>http://www.nelsonreis.net/</id><updated>2015-09-01T01:11:28+01:00</updated><author><name>Nelson Reis</name><uri>http://www.nelsonreis.net</uri><email>nelsonfsr@gmail.com</email></author><generator>Sandra.Snow Atom Generator</generator><link rel="alternate" href="http://www.nelsonreis.net/feed.xml" /><link rel="self" type="text/html" title="Nelson Reis Blog" href="http://www.nelsonreis.net/feed.xml" /><entry><id>http://www.nelsonreis.net/2015/08/31/when-to-use-nuget-and-bower/</id><title type="text">When to use NuGet and Bower</title><summary type="html">&lt;p&gt;I believe that &lt;a href="http://www.nuget.org/"&gt;NuGet&lt;/a&gt; has been one of the most significant tools added to Visual Studio since it was introduced in the 2010 version. It's hard to imagine anyone working on a .NET project over the last few years and still be able to keep NuGet packages out of the solution.
+<feed xmlns="http://www.w3.org/2005/Atom"><title type="text">Nelson Reis Blog</title><subtitle type="text">Nelson Reis Blog</subtitle><id>http://www.nelsonreis.net/</id><updated>2016-12-31T10:29:23Z</updated><author><name>Nelson Reis</name><uri>http://www.nelsonreis.net</uri><email>nelsonfsr@gmail.com</email></author><generator>Sandra.Snow Atom Generator</generator><link rel="alternate" href="http://www.nelsonreis.net/feed.xml" /><link rel="self" type="text/html" title="Nelson Reis Blog" href="http://www.nelsonreis.net/feed.xml" /><entry><id>http://www.nelsonreis.net/2016/12/31/2016-in-review/</id><title type="text">2016 in review</title><summary type="html">&lt;p&gt;Like any other year, 2016 comes to an end. It's time to make a summary of what this year was for me at it's various levels. &lt;em&gt;Not that it matters to anyone, but remember, I write it for myself, so bear with me :)&lt;/em&gt;&lt;/p&gt;
+
+</summary><published>2016-12-31T00:00:00Z</published><updated>2016-12-31T00:00:00Z</updated><link rel="alternate" href="http://www.nelsonreis.net/2016/12/31/2016-in-review/" /><content type="html">&lt;p&gt;Like any other year, 2016 comes to an end. It's time to make a summary of what this year was for me at it's various levels. &lt;em&gt;Not that it matters to anyone, but remember, I write it for myself, so bear with me :)&lt;/em&gt;&lt;/p&gt;
+
+&lt;!--excerpt--&gt;
+
+&lt;h2&gt;Professional&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;DevScope&lt;/strong&gt; - This year I've left my old job, after more than 8 years, and joined &lt;strong&gt;&lt;a href="http://www.devscope.net"&gt;DevScope&lt;/a&gt;&lt;/strong&gt;. This was a major change for me, as you can imagine, not only for the company but also for the types of projects I've tackled at this new position. Since the beginning of the year, I've had the opportunity to work on several projects and learn a bunch from a lot of diverse amazing people, which was precisely one of my main motivations for this transition.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Side-projects&lt;/strong&gt; - I give a lot of value to side-projects, for various reasons. Due to a lot of factors, this was a very neglected area in 2016, which does not make me happy, so changes will be expected next year.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Learning&lt;/strong&gt; - This holds a very tight relation to side-projects. Still, I've made a lot of improvements on disparate technologies, as needed on the different projects I collaborated with. 2017 will not be the year in which I will specialize in only one area or technology, that's for certain.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Community&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http://netponto.org"&gt;NetPonto&lt;/a&gt;&lt;/strong&gt; - With the intent to keep the community alive, I've started helping this community group in 2015 (that year I've helped on 3 meetings at Porto). In 2016 I've managed to help on 5 meetings at &lt;a href="https://www.facebook.com/147281438622/photos/?tab=albums"&gt;Porto&lt;/a&gt; and 2 more on nearby cities &lt;a href="https://www.facebook.com/147281438622/photos/?tab=album&amp;amp;album_id=10154023073523623"&gt;Braga&lt;/a&gt; and &lt;a href="https://www.facebook.com/147281438622/photos/?tab=album&amp;amp;album_id=10154261277338623"&gt;Aveiro&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Blog&lt;/strong&gt; - As this is the only blog post of 2016, I think it's self explanatory. Definitely something to improve in 2017.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Social media&lt;/strong&gt; - I've started to share more frequently some articles I consider worth reading, even if I don't agree with all of the points, but still consider the main arguments relevant and capable for triggering a conversation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Speaking&lt;/strong&gt; - I've made a small presentation at &lt;a href="http://www.portodata.net"&gt;Porto.Data&lt;/a&gt;, a Microsoft Data Platform Community, on &lt;a href="http://www.portodata.net/xxii-evento-porto-data-31-agosto-2016-uptec/"&gt;SQL Server Data Tools&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Personal&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Family&lt;/strong&gt; - Keeping up with all the family duties and still have time to relax and enjoy each moment is sometimes a hard task, but being present on the first full year of my child and raising him with my girlfriend-turned-wife is just inexplicably astounding.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Projects&lt;/strong&gt; - A lot of setbacks occurred during the year that postponed some of the personal and family projects we had projected to happen in 2016. Others have been slowly put in place, and a lot more will be starting next year.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Health &amp;amp; Exercise&lt;/strong&gt; - This was a tough year for me to exercise routinely, so my weight reflects that. On the other hand, a lot of unplanned exercise took place throughout the year on some home improvement projects. Besides that, chasing around my energetic and strong personality kid &lt;i class="fa fa-heart" style="color:red"&gt;&lt;/i&gt; gives me free mental and physical exercise in a way no other activity can.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;What to expect in 2017&lt;/h2&gt;
+
+&lt;p&gt;It will certainly be an amazing year. I have a lot of stuff ahead of me to accomplish in the next 12 months at all of the above contexts. Some of them will be truly challenging, but that's a fantastic way to keep on moving forward.&lt;br /&gt;
+One thing worth mentioning is that all of this takes time, so choices and adjustments have to be made along the way in order to have available free time for what's more important in my life, and that is obviously my family and friends. Without them nearby, the items above wouldn't make any sense at all.&lt;/p&gt;
+
+&lt;p&gt;How will your 2017 be like?&lt;/p&gt;
+</content></entry><entry><id>http://www.nelsonreis.net/2015/08/31/when-to-use-nuget-and-bower/</id><title type="text">When to use NuGet and Bower</title><summary type="html">&lt;p&gt;I believe that &lt;a href="http://www.nuget.org/"&gt;NuGet&lt;/a&gt; has been one of the most significant tools added to Visual Studio since it was introduced in the 2010 version. It's hard to imagine anyone working on a .NET project over the last few years and still be able to keep NuGet packages out of the solution.
 &lt;em&gt;Of course I'm being a bit extreme here, but if that's your case, please make a comment below, I really would like to know more details on that.&lt;/em&gt;&lt;/p&gt;
 
 </summary><published>2015-08-30T23:00:00Z</published><updated>2015-08-30T23:00:00Z</updated><link rel="alternate" href="http://www.nelsonreis.net/2015/08/31/when-to-use-nuget-and-bower/" /><content type="html">&lt;p&gt;I believe that &lt;a href="http://www.nuget.org/"&gt;NuGet&lt;/a&gt; has been one of the most significant tools added to Visual Studio since it was introduced in the 2010 version. It's hard to imagine anyone working on a .NET project over the last few years and still be able to keep NuGet packages out of the solution.
@@ -50,7 +87,8 @@ NuGet packages work great for including compiled external libraries into my proj
 &lt;li&gt;&lt;a href="http://momentjs.com/"&gt;Moment.js&lt;/a&gt; (&lt;a href="http://github.com/moment/moment/"&gt;source&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;On my next blog post, I'll show you how we can add Bower to a Visual Studio project.&lt;/p&gt;
+&lt;p&gt;~~On my next blog post, I'll show you how we can add Bower to a Visual Studio project.~~&lt;br /&gt;
+EDIT: It turns out that making promises on upcoming unwritten blog posts is not such a good of an idea.&lt;/p&gt;
 </content></entry><entry><id>http://www.nelsonreis.net/2015/06/01/sqlsaturday-369-lisbon-2015/</id><title type="text">SQLSaturday #369 Lisbon 2015</title><summary type="html">&lt;p&gt;Last May 16 I attended &lt;a href="http://www.sqlsaturday.com/369"&gt;SQLSaturday at Lisbon&lt;/a&gt;, Portugal, a free training event mainly targeted at SQL Server and Data professionals. The event featured a total of 6 session slots distributed over the following 7 (!) tracks: Performance, Business Intelligence, Agile &amp;amp; Cloud, Analytics &amp;amp; NonRelational, DBA, Hands-On Lab and SQL Server 2016.&lt;/p&gt;
 
 </summary><published>2015-05-31T23:00:00Z</published><updated>2015-05-31T23:00:00Z</updated><link rel="alternate" href="http://www.nelsonreis.net/2015/06/01/sqlsaturday-369-lisbon-2015/" /><content type="html">&lt;p&gt;Last May 16 I attended &lt;a href="http://www.sqlsaturday.com/369"&gt;SQLSaturday at Lisbon&lt;/a&gt;, Portugal, a free training event mainly targeted at SQL Server and Data professionals. The event featured a total of 6 session slots distributed over the following 7 (!) tracks: Performance, Business Intelligence, Agile &amp;amp; Cloud, Analytics &amp;amp; NonRelational, DBA, Hands-On Lab and SQL Server 2016.&lt;/p&gt;
