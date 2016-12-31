@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 category: Visual Studio, Web
 title: When to use NuGet and Bower
@@ -54,4 +54,5 @@ As for **Bower**, we stick to the web frontend packages, like the ones below:
 - [Moment.js](http://momentjs.com/) ([source](http://github.com/moment/moment/))
 
 
-On my next blog post, I'll show you how we can add Bower to a Visual Studio project.
+~~On my next blog post, I'll show you how we can add Bower to a Visual Studio project.~~  
+EDIT: It turns out that making promises on upcoming unwritten blog posts is not such a good of an idea.
